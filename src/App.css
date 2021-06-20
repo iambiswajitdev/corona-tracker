@@ -1,38 +1,118 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+}
+.main_covid_table {
   text-align: center;
+  text-transform: capitalize;
+  margin: 50px 0 0;
+  background-image: url("assets/cbgg.png");
+  background-repeat: no-repeat;
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 33px;
+  margin-bottom: 38px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.covid_box {
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 25px #cdcdcd;
+  margin-bottom: 45px;
+  border-radius: 12px;
+  height: 195px;
+}
+.box_1color {
+  background-color: #ff9933 !important;
+}
+.box_2color {
+  background-color: #23d323 !important;
+}
+.box_3color {
+  background-color: #713359 !important;
+}
+.box_4color {
+  background-color: #ff4b33 !important;
+}
+.box_5color {
+  background-color: #6e61f4 !important;
+}
+.box_6color {
+  background-color: #e438db !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 30px;
+}
+.title_update {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+}
+.covid_data {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 5px 5px 8px #434343;
+}
+.title span {
+  font-size: 15px;
+  color: #fff;
+}
+.title_update span {
+  font-size: 15px;
+  color: #fff;
+}
+.live {
+  position: relative;
+  text-transform: uppercase;
+}
+.live::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 46%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
   }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+.footer {
+  font-size: 20px;
 }
